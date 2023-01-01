@@ -1,6 +1,6 @@
 # Godot Jigglebones
 
-This is an addon that adds jigglebones to Godot 3.x. Jigglebones are bones that jiggle when the skeleton moves. They are used for procedural animation, so you can move only the important parts of the skeleton and the little bits will automatically jiggle with it.
+This is an addon that adds jigglebones to Godot 4.x. Jigglebones are bones that jiggle when the skeleton moves. They are used for procedural animation, so you can move only the important parts of the skeleton and the little bits will automatically jiggle with it.
 
 ![Jiggle](images/jiggle.gif)
 
@@ -125,16 +125,19 @@ No known issues outstanding. See below.
 
 # Changes From The Original Version
 
-This repository is a forked version by Cory Petkovsek (@tinmanjuggernaut), which includes the following changes:
+This repository is a forked version of the code by Bauxitedev, which includes the following changes:
 
-* Compatibility updated for 3.2 and beyond (by yaelatletl and others)
-* Add collision support
-* Static typing
-* Disabled tool mode (JiggleBones runs only at runtime)
-* Option to Enable/Disable a JiggleBone node
-* Move verification to the start, to reduce code ran in each frame
-* Change to `_physics_process()` for a more consistent simulation
+* Compatibility for 3.2+ [2]
+* Error checking and corruption prevention [2]
+* Add collision support [1]
+* Static typing [1]
+* Option to Enable/Disable a JiggleBone node [1]
+* Move verification to the start, to reduce code ran in each frame [1]
+* Change to `_physics_process()` for a more consistent simulation [1]
+* Compatibility for 4.0 [2]
 
+[1] by Cory Petkovsek (@tinmanjuggernaut)
+[2] by Yael Atletl
 
 # License
 

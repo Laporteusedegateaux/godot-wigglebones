@@ -32,7 +32,7 @@ environment = SubResource("2")
 transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Armature" parent="Scene Root" index="0"]
-transform = Transform3D(0.92917, -0.0666382, 0.363597, -0.076654, 0.927501, 0.365876, -0.361618, -0.367832, 0.856698, 0.177412, 0.624141, -0.334771)
+transform = Transform3D(0.92917, -0.0666382, 0.363597, -0.0766541, 0.927501, 0.365876, -0.361618, -0.367832, 0.856698, -0.115811, 0.624141, -0.334771)
 
 [node name="Skeleton3D" parent="Scene Root/Armature" index="0"]
 transform = Transform3D(1, 0, -5.96046e-08, -1.49012e-08, 1, 0, -5.96046e-08, -8.9407e-08, 1, -0.0150044, 0.181551, 0.0716173)
@@ -47,21 +47,21 @@ bones/5/position = Vector3(-1.42109e-14, 0, -0.628613)
 skeleton = NodePath("..")
 
 [node name="earL" type="Node3D" parent="Scene Root/Armature/Skeleton3D" index="1"]
-transform = Transform3D(0.297001, -0.210446, -0.931399, -0.0835832, 0.965938, -0.244903, 0.951212, 0.150586, 0.269295, 1.6874, 0.273181, -0.796935)
+transform = Transform3D(0.297413, -0.210553, -0.931242, -0.0834751, 0.96591, -0.245052, 0.951093, 0.150617, 0.269698, 1.6874, 0.273182, -0.796935)
 top_level = true
 script = ExtResource("2")
 bone_name = "Ear.L"
 collision_shape = NodePath("")
 
 [node name="earR" type="Node3D" parent="Scene Root/Armature/Skeleton3D" index="2"]
-transform = Transform3D(0.297282, 0.210296, 0.931342, 0.0835087, 0.965978, -0.244773, -0.951131, 0.150542, 0.269606, -1.6874, 0.273182, -0.796934)
+transform = Transform3D(0.297145, 0.210679, 0.931299, 0.0835453, 0.965877, -0.245157, -0.95117, 0.150653, 0.269405, -1.6874, 0.273182, -0.796935)
 top_level = true
 script = ExtResource("2")
 bone_name = "Ear.R"
 collision_shape = NodePath("")
 
 [node name="chin" type="Node3D" parent="Scene Root/Armature/Skeleton3D" index="3"]
-transform = Transform3D(0.999999, -2.98023e-07, -0.000118688, 0.000118703, 0.00028044, 1, -8.04663e-07, -1, 0.000281751, -2.38419e-07, -1.54214, 0.318184)
+transform = Transform3D(1, -1.49012e-07, -0.000177294, 0.000177115, -6.98864e-05, 1, -2.08616e-07, -1, -6.98566e-05, -1.11759e-07, -1.54214, 0.318184)
 top_level = true
 script = ExtResource("2")
 bone_name = "Chin"

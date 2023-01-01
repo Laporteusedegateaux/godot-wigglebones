@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfssfbftee71o"
-path="res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex"
+uid="uid://7a728ku6c6l4"
+path="res://.godot/imported/collision_structure.jpg-8a5584c33f37cd9c1f6c8dedb346a01b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=["res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex"]
+source_file="res://images/collision_structure.jpg"
+dest_files=["res://.godot/imported/collision_structure.jpg-8a5584c33f37cd9c1f6c8dedb346a01b.ctex"]
 
 [params]
 
-compress/mode=3
+compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/bptc_ldr=0

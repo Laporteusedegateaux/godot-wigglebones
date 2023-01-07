@@ -6,12 +6,12 @@ enum Axis {
 
 @export var enabled: bool = true
 @export var bone_name: String
-@export var stiffness: float = 1
-@export var damping: float = 0
+@export_range(0.1,100,0.1) var stiffness: float = 1
+@export_range(0,100,0.1) var damping: float = 0
 @export var use_gravity: bool = false
 @export var gravity := Vector3(0, -9.81, 0)
-@export var forward_axis: int = Axis.Z_Minus
-@export var collision_shape: NodePath 
+@export var forward_axis: Axis = Axis.Z_Minus
+@export_node_path(CollisionShape3D) var collision_shape: NodePath 
 
 var skeleton: Skeleton3D
 var bone_id: int

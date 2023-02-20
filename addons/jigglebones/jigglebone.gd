@@ -1,5 +1,5 @@
-extends Node3D
 @tool
+extends Node3D
 enum Axis {
 	X_Plus, Y_Plus, Z_Plus, X_Minus, Y_Minus, Z_Minus
 }
@@ -11,7 +11,7 @@ enum Axis {
 @export var use_gravity: bool = false
 @export var gravity := Vector3(0, -9.81, 0)
 @export var forward_axis: Axis = Axis.Z_Minus
-@export_node_path(CollisionShape3D) var collision_shape: NodePath 
+@export_node_path var collision_shape: NodePath 
 
 var skeleton: Skeleton3D
 var bone_id: int

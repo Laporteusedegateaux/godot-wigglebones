@@ -5,7 +5,17 @@ enum Axis {
 }
 
 @export var enabled: bool = true
-@export var bone_name: String
+@export var bone_name: String:
+	set(name):
+		bone_name = name
+		skeleton = get_parent() # Parent must be a Skeleton node
+		if skeleton:
+			skeleton.clear_bones_global_pose_override()
+			var temp_bone_id = skeleton.find_bone(bone_name)
+			if temp_bone_id != -1:
+				bone_id = temp_bone_id
+			
+		
 @export_range(0.1,100,0.1) var stiffness: float = 1
 @export_range(0,100,0.1) var damping: float = 0
 @export var use_gravity: bool = false

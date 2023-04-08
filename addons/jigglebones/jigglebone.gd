@@ -75,7 +75,7 @@ func _physics_process(delta) -> void:
 	############### Integrate velocity (Verlet integration) ##############	
 
 	# If not using gravity, apply force in the direction of the bone (so it always wants to point "forward")
-	var grav: Vector3 = (bone_transf_rest_world.basis *Vector3(0, 0, -1)).normalized() * 9.81
+	var grav: Vector3 = (bone_transf_rest_world.basis *get_bone_forward_local()).normalized() * 9.81
 	var vel: Vector3 = (global_transform.origin - prev_pos) / delta
 
 	if use_gravity:

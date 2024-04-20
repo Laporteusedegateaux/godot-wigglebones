@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://bl0ieg8tkdkj3"]
 
 [ext_resource type="PackedScene" uid="uid://cl486sex8njfr" path="res://models/suzanne.dae" id="1"]
-[ext_resource type="Script" path="res://addons/jigglebones/jigglebone.gd" id="2"]
+[ext_resource type="Script" path="res://addons/wigglebones/Wigglebone.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://dhkej6dvsy3eg" path="res://tile_tex.png" id="4"]
 
 [sub_resource type="Sky" id="1"]
@@ -46,22 +46,25 @@ bones/5/position = Vector3(-1.42109e-14, 0, -0.628613)
 [node name="Suzanne" parent="Scene Root/Armature/Skeleton3D" index="0"]
 skeleton = NodePath("..")
 
-[node name="earL" type="Node3D" parent="Scene Root/Armature/Skeleton3D" index="1"]
+[node name="earL" type="Node3D" parent="Scene Root/Armature/Skeleton3D" index="1" node_paths=PackedStringArray("skeleton")]
 transform = Transform3D(0.297413, -0.210553, -0.931242, -0.0834751, 0.96591, -0.245052, 0.951093, 0.150617, 0.269698, 1.6874, 0.273182, -0.796935)
 top_level = true
 script = ExtResource("2")
+skeleton = NodePath("..")
 bone_name = "Ear.L"
 
-[node name="earR" type="Node3D" parent="Scene Root/Armature/Skeleton3D" index="2"]
+[node name="earR" type="Node3D" parent="Scene Root/Armature/Skeleton3D" index="2" node_paths=PackedStringArray("skeleton")]
 transform = Transform3D(0.297145, 0.210679, 0.931299, 0.0835453, 0.965877, -0.245157, -0.95117, 0.150653, 0.269405, -1.6874, 0.273182, -0.796935)
 top_level = true
 script = ExtResource("2")
+skeleton = NodePath("..")
 bone_name = "Ear.R"
 
-[node name="chin" type="Node3D" parent="Scene Root/Armature/Skeleton3D" index="3"]
+[node name="chin" type="Node3D" parent="Scene Root/Armature/Skeleton3D" index="3" node_paths=PackedStringArray("skeleton")]
 transform = Transform3D(1, -1.49012e-07, -0.000177294, 0.000177115, -6.98864e-05, 1, -2.08616e-07, -1, -6.98566e-05, -1.11759e-07, -1.54214, 0.318184)
 top_level = true
 script = ExtResource("2")
+skeleton = NodePath("..")
 bone_name = "Chin"
 
 [node name="AnimationPlayer" parent="Scene Root" index="1"]
